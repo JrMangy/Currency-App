@@ -1,6 +1,6 @@
 import React from "react"
 
-function ConversionComp() {
+const ConversionComp = (props) => {
     return (
         <div class= 'dropdown'>
             <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Currencies I have
