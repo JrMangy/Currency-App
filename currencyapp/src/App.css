@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  background-size: cover;
+  height: 100%;
+  background-position: center; 
+  background-image: url('https://cdn.suwalls.com/wallpapers/vector/currency-9975-1920x1200.jpg');
+  filter: brightness(50%)
+}
+.headerText{
+  color: white;
+  filter: brightness(100%);
+  font-size: 60px;
 }
 
 .App-logo {
@@ -9,7 +19,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,6 +26,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  filter: brightness(100%)
 }
 
 .App-link {
