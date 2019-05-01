@@ -1,6 +1,10 @@
 import React from "react"
 
 class ConversionComp extends React.Component {
+    constructor(){
+        super();
+    }
+    render(){
     return (
         <div class= 'dropdown'>
             <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Currencies I have
@@ -20,7 +24,7 @@ class ConversionComp extends React.Component {
             
             
         </div>
-    )
+    )}
 }
 
 export default ConversionComp
