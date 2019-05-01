@@ -1,7 +1,6 @@
 import React from 'react'
-import firebase from 'firebase';
+import firebase from 'firebase'
 
-const Home = () => {
 
     var config = {
         apiKey: "AIzaSyAOHhMoKsyT0tZ8NNpTpevUsS6g7D5JFXQ",
@@ -13,7 +12,10 @@ const Home = () => {
     };
     firebase.initializeApp(config);
     const database = firebase.database();
-    class App extends React.Component {
+
+    class Home extends React.Component {
+
+
         constructor() {
             super();
             this.state = {
@@ -36,11 +38,12 @@ const Home = () => {
             })
         }
         render() {
-            return {
-
-            }
+            return (
+                <div className="Background">
+                    
+                </div>
+            )
         }
     }
-}
 
 export default Home
