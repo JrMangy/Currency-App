@@ -11,7 +11,7 @@ class ConversionComp extends React.Component {
             <NavLink/>
            
            <div className="List"> 
-           <ul className=' '>
+           <ul className='Mylist'>
                 <li><a className="active" href="#Create Page">Choose your money's worth:</a></li>
                 <li><a href="#Manage Pages">USD $</a></li>
                 <li><a href="#Create Ads">Euro &#x20AC;</a></li>
