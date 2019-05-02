@@ -1,7 +1,6 @@
 import React from "react";
 import NavLink from "./Navigation";
 import '../CSS/ConversionComp.css';
-//import 'bootstrap/dist/css/bootstrap.css';
 
 class ConversionComp extends React.Component {
     

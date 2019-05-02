@@ -11,7 +11,12 @@ const Navigation = () => {
             <img src={leftArrow} alt="arrow" className="arrowImage"  ></img>
             Back to Home 
             </NavLink>
-            <NavLink to="/ConversionComp"><h1 style={{textAlign:'center', fontSize:'60'}}>Conversions</h1></NavLink>
+            <NavLink to="/China">China</NavLink>
+            <NavLink to="/India">India</NavLink>
+            <NavLink to="/UK">UK</NavLink>
+            <NavLink to="/US">US</NavLink>
+            <NavLink to="/EU">EU</NavLink>
+            <NavLink to="/Login">Login</NavLink>
             
         </div>
     )
