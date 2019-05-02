@@ -4,6 +4,8 @@ import leftArrow from './leftArrow.jpg';
 import '../CSS/Nav.css';
 
 const Navigation = () => {
+    
+
     return(
         <div class="nav">
             <NavLink to="/" class="home"> 
