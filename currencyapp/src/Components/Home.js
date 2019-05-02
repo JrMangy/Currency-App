@@ -1,7 +1,7 @@
 import React from 'react'
 import firebase from 'firebase'
 import '../CSS/Home.css'
-import 'bootstrap/dist/css/bootstrap.css'
+//import 'bootstrap/dist/css/bootstrap.css'
 
 
 var config = {
