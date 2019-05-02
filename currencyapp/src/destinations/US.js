@@ -22,7 +22,7 @@ render() {
             <h3>Languages</h3>
             <p>Though there is no federally established official language, a small majority of states have afforded English this designation. Dozens of indigenous languages, including Hawaiian, share official status on a regional basis.</p>
             <h3>Popular Tourist Destinations</h3>
-                <ul>
+                <ul className="destination">
                     <li>French Quarter, New Orleans, Louisiana</li>
                     <li>Grand Canyon National Park, Arizona</li>
                     <li>Metropolitan Museum of Art, New York City, New York</li>

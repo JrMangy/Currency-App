@@ -30,7 +30,7 @@ render() {
 The most common alternative currencies among member states are the Pound Sterling (UK)* and Krona (Sweden).
 Switzerland is not an EU member, but the Swiss Franc is notable as a major currency of the Schengen Area.</p>
             <h3>Popular Tourist Destinations</h3>
-                <ul>
+                <ul className="destination">
                     <li>Colosseum, Rome, Italy</li>
                     <li>Fira, Santorini, Greece</li>
                     <li>Louvre Museum, Paris, France</li>

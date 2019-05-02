@@ -22,7 +22,7 @@ render() {
             <h3>Languages</h3>
             <p>Hindi and English are employed at the national level, with another 22 languages officially designated for regional use.</p>
             <h3>Popular Tourist Destinations</h3>
-                <ul>
+                <ul className="destination">
                     <li>Backwaters, Alleppey, Kerala</li>
                     <li>Baga, Goa</li>
                     <li>Golden Temple, Amritsar</li>

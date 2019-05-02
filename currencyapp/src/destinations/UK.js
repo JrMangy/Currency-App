@@ -25,7 +25,7 @@ render() {
             <p>Though the UK has no widely used alternative currencies, travelers should be aware that banknotes issued in Scotland and Northern Ireland differ from those issued in England and Wales. They are legal to use in any British country, but sellers are not legally obligated to accept them.
 Northern Ireland is not to be confused with the Republic of Ireland, as the latter is an independent state and member of the Eurozone.</p>
             <h3>Popular Tourist Destinations</h3>
-                <ul>
+                <ul className="destination">
                     <li>British Museum, London, England</li>
                     <li>Grand Opera House, Belfast, Northern Ireland</li>
                     <li>Loch Ness, Scotland</li>
