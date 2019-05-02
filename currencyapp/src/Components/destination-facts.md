@@ -26,7 +26,6 @@ United States | US Dollar
 * Great Wall  
   Forbidden City  
   Xi'an Terracotta Warriors  
-  Summer Palace  
 
 <br>
 
@@ -51,12 +50,10 @@ United States | US Dollar
 * Hindi and English are employed at the national level, with another 22 languages officially designated for regional use.  
 * n/a 
 * Indian Standard Time (UTC+5:30)  
-* Taj Mahal, Agra  
-  Golden Temple, Amritsar  
+* Golden Temple, Amritsar  
   Baga, Goa
   Backwaters, Alleppey, Kerala  
-  Holi Festival of Colors, Mathura-Vrindavan
-
+  
 <br> 
 
 **United Kingdom**  
@@ -66,10 +63,8 @@ United States | US Dollar
 * Western European Time (UTC)  
   British Summer Time / Western European Summer Time (UTC+1)
 * British Museum, London, England  
-  The Cotswolds, England  
   Loch Ness, Scotland  
   Grand Opera House, Belfast, Northern Ireland
-
 
 <br>
 
