@@ -4,6 +4,7 @@ import '../CSS/Home.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
 
+var valueInput;
 var config = {
     apiKey: "AIzaSyAOHhMoKsyT0tZ8NNpTpevUsS6g7D5JFXQ",
     authDomain: "currensyapp-9296e.firebaseapp.com",
@@ -14,6 +15,14 @@ var config = {
 };
 firebase.initializeApp(config);
 const database = firebase.database();
+// console.log(firebase);
+var ref = database.ref('currency');
+var valueUS = {
+    name: 'USD',
+    value: 834
+}
+ref.push(valueUS);
+
 
 class Home extends React.Component {
 
@@ -47,36 +56,36 @@ class Home extends React.Component {
                 <div className="App-header">
 
                     <form>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio" checked />USD $
+                        <label >
+                            <input className="radio-inline1" type="radio" value = "USD" name="optradio" checked/>USD $
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio" />Euro &#2080;
+                        <label className="radio-inline2">
+                            <input type="radio" value = "Euro" name="optradio"/>Euro &euro;   
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio" />Pound &#x
+                        <label className="radio-inline3">
+                            <input type="radio" value = "Pound" name="optradio"/>Pound &#xa3;
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio" />Option 2
+                        <label className="radio-inline4">
+                            <input type="radio" value = "Rupee" name="optradio" />Rupee &#x20A8;
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio" />Option 3
+                        <label className="radio-inline5">
+                            <input type="radio" value = "Yuan"name="optradio" />Yuan &#x5143;
                         </label>
                     </form>
                     <form>
                         <label for="exampleInputEmail1">Enter your amount: </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <button type="submit" className="btn btn-primary">Submit</button>
                     </form>
                     <form>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio" checked />Option 1
+                        <label className="radio-inline6">
+                            <input type="radio" name="optradio2" checked />Option 1
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio" />Option 2
+                        <label className="radio-inline6">
+                            <input type="radio" name="optradio2" />Option 2
                         </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="optradio" />Option 3
+                        <label className="radio-inline6">
+                            <input type="radio" name="optradio2" />Option 3
                         </label>
                     </form>
                 </div>
