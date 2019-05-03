@@ -1,24 +1,17 @@
 /* Main Background */
-.App {
+/* .App {
     text-align: center;
     background-size: cover;
     height: 100%;
     background-position: center; 
     background-image: url('https://cdn.suwalls.com/wallpapers/vector/currency-9975-1920x1200.jpg');
-  }
-  .headerText{
+} */
+.headerText{
     color: white;
     filter: brightness(100%);
     font-size: 60px;
-  }
-  
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .App-header {
+}
+.App-header {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,100 +19,40 @@
     justify-content: center;
     /* font-size: calc(10px + 2vmin); */
     color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
+}  
+@keyframes App-logo-spin {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
     }
-  }
-
-
+}
 .Background {
     text-align: center;
-    background-image: url('https://cdn.suwalls.com/wallpapers/vector/currency-9975-1920x1200.jpg');
+    background-image: url('../Components/Currency.jpeg');
+    background-repeat: no-repeat;
 }
-
-/* Dropdown css */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    top:45px;
-    right:0px;
-    width: 200px;
-    background-color: white;
-    font-weight:bold;
-    position: absolute;
-
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/*li a {
-    color: #000;
-    text-decoration: none;
-}
-li {
-    padding: 8px 16px;
-    border-bottom: 1px solid #e5e5e5;
-}
-li:last-child {
-    border-bottom: none;
-}*/
-li:hover {
-    background-color: #e5e5e5;
-    color: white;
-}
-.button{
-    width:178px;
-    height:18px;
-    background-color:#ff3232 ;
-    padding:12px;
-    border-radius:5px;
-    font-weight:bold;
-    color:white;
-}
-.button:before{
-    content:"";
-    position:absolute;
-    width:0px;
-    height:0px;
-    border: 10px solid;
-    border-color: white transparent transparent transparent;
-    right:6px;
-    top:18px;
-};
 .radio-inline1 {
     margin-left: -3px;
     margin-right: -3px;
-};
+}
 .radio-inline2 {
     padding-left: 5px;
     padding-right: 5px;
-};
+}
 .radio-inline3 {
     padding-left: 5px;
     padding-right: 5px;
-};
+}
 .radio-inline4 {
     padding-left: 5px;
     padding-right: 5px;
-};
+}
 .radio-inline5 {
     padding-left: 5px;
     padding-right: 5px;
-};
+}
 input[type="radio"]{
     margin: 0 10px 0 10px;
-};
+}

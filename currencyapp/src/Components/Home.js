@@ -1,7 +1,7 @@
 import React from 'react'
 import firebase from 'firebase'
 import '../CSS/Home.css'
-import 'bootstrap/dist/css/bootstrap.css'
+//import 'bootstrap/dist/css/bootstrap.css'
 
 
 var valueInput;
@@ -73,8 +73,8 @@ class Home extends React.Component {
                         </label>
                     </form>
                     <form>
-                        <label for="exampleInputEmail1">Enter your amount: </label>
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <label for="exampleInputEmail1">Enter currency amount: </label>
+                        <input type="number" className="currencyInput" placeholder="Enter amount" />
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>
                     <form>

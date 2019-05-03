@@ -23,10 +23,9 @@ United States | US Dollar
   *other:* Cantonese, Uyghur, Mongolian 
 * n/a  
 * China Standard Time (UTC+8)  
-* Great Wall  
-  Forbidden City  
+* Forbidden City  
+  Great Wall  
   Xi'an Terracotta Warriors  
-  Summer Palace  
 
 <br>
 
@@ -39,9 +38,10 @@ United States | US Dollar
   Central European Time (UTC+1)
   Eastern European Time (UTC+2)
   Seasonal daylight savings time is used in some member states.  
-* Louvre Museum, Paris, France  
-  Colosseum, Rome, Italy  
-  Fira, Santorini, Greece
+* Colosseum, Rome, Italy  
+  Fira, Santorini, Greece  
+  Louvre Museum, Paris, France
+
 
 **The United Kingdom voted in 2016 to end its membership in the European Union. The process is due to be completed in October 2019.*  
 
@@ -51,12 +51,10 @@ United States | US Dollar
 * Hindi and English are employed at the national level, with another 22 languages officially designated for regional use.  
 * n/a 
 * Indian Standard Time (UTC+5:30)  
-* Taj Mahal, Agra  
-  Golden Temple, Amritsar  
-  Baga, Goa
+* Baga, Goa
   Backwaters, Alleppey, Kerala  
-  Holi Festival of Colors, Mathura-Vrindavan
-
+  Golden Temple, Amritsar  
+  
 <br> 
 
 **United Kingdom**  
@@ -66,10 +64,8 @@ United States | US Dollar
 * Western European Time (UTC)  
   British Summer Time / Western European Summer Time (UTC+1)
 * British Museum, London, England  
-  The Cotswolds, England  
-  Loch Ness, Scotland  
-  Grand Opera House, Belfast, Northern Ireland
-
+  Grand Opera House, Belfast, Northern Ireland  
+  Loch Ness, Scotland
 
 <br>
 
