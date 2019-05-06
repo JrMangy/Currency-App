@@ -19,11 +19,11 @@ render() {
             <img className="slide" src={GreatWall} alt="GreatWall"></img>
             <img className="slide" src={Terracotta} alt="Terracotta"></img>
             {/* slideshow */}
-            <h3 className="txt">Languages</h3>
+            <h3>Languages</h3>
             <p>official language: Modern Standard Mandarin
                 other: Cantonese, Uyghur, Mongolian</p>
             <h3>Popular Tourist Destinations</h3>
-                <ul>
+                <ul className="destination">
                     <li>Forbidden City</li>
                     <li>Great Wall</li>
                     <li>Xi'an Terracotta Warriors</li>
