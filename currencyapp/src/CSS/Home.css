@@ -1,11 +1,4 @@
 /* Main Background */
-/* .App {
-    text-align: center;
-    background-size: cover;
-    height: 100%;
-    background-position: center; 
-    background-image: url('https://cdn.suwalls.com/wallpapers/vector/currency-9975-1920x1200.jpg');
-} */
 .headerText{
     color: white;
     filter: brightness(100%);
@@ -28,31 +21,67 @@
       transform: rotate(360deg);
     }
 }
-.Background {
+.background {
     text-align: center;
-    background-image: url('../Components/Currency.jpeg');
+    background-image: url('../Components/images/CurrencyBackground.jpg');
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-.radio-inline1 {
-    margin-left: -3px;
-    margin-right: -3px;
-}
-.radio-inline2 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.radio-inline3 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.radio-inline4 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.radio-inline5 {
-    padding-left: 5px;
-    padding-right: 5px;
-}
+/*Button Styling*/
 input[type="radio"]{
     margin: 0 10px 0 10px;
+}
+.form-radio{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+     font-size: 5px;
+}
+.form-radio:checked::before{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+     color: #666;
+}
+.form-radio:hover{
+     background-color: #f7f7f7;
+}
+.form-radio:checked{
+     background-color: #f1f1f1;
+     color: chartreuse;
+}
+/*Text Styling*/
+label {
+     font: 15px/1.7 'Open Sans', sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+     font-size: 25px;
+     color: white;
+} 
+.oblique{
+    font-style: oblique;
+}
+/*Text Box*/
+.currencyInput{
+    width: 40%;
+    padding: 11px 20px;
+}
+.submitButton {
+    padding: 12px 20px;
 }
