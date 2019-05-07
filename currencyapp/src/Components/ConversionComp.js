@@ -6,9 +6,10 @@ class ConversionComp extends React.Component {
     
     render() {
     return (
-        
+        <div>
+        <NavLink/>
         <div className ='Con-page'>
-            <NavLink/>
+            
            
            <div className="List"> 
            <ul className='Mylist'>
@@ -23,7 +24,7 @@ class ConversionComp extends React.Component {
             </div>
 
                         
-        
+        </div>
         </div>
     )}
 }
