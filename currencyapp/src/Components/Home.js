@@ -1,6 +1,7 @@
 import React from 'react'
 import firebase from 'firebase'
 import '../CSS/Home.css'
+import Proptypes from 'prop-types'
 //import 'bootstrap/dist/css/bootstrap.css'
 
 var config = {
@@ -15,8 +16,8 @@ firebase.initializeApp(config);
 const database = firebase.database();
 
 class Home extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             conversion: {},
             convertedUSD: {
@@ -30,19 +31,19 @@ class Home extends React.Component {
                 rupee: 0,
                 euro: 0,
                 yuan: 0
-            }
+            },
+            value: 0
         }
     };
     componentDidMount() {
         const conversion = database.ref('object/');
         conversion.once('value', snapshot => {
-            console.log('I am setting the state.')
             this.setState({ conversion: snapshot.val() });
         })
     };
     changingInput = e => {
         e.preventDefault();
-        let input = document.getElementById('inputBox');
+        var input = document.getElementById('inputBox');
         var dollar = document.getElementById('clickedDollar');
         var euro = document.getElementById('clickedEuro');
         var pound = document.getElementById('clickedPound');
@@ -81,7 +82,7 @@ class Home extends React.Component {
                     }
                 })
                 console.log(input);
-            } else if(dollar.checked){
+            } else if (dollar.checked) {
                 input = (input * this.state.conversation.Dollar);
                 this.setState({
                     converted: {
@@ -92,9 +93,26 @@ class Home extends React.Component {
             }
         }
     }
-    // changingOutput = e => {
-    //     console.log(input);
-    // }
+    handleClick(e) {
+        console.log('Changes are Happening!')
+        this.setState({ value: e.target.vale });
+        var input = (this.state.value);
+        var input2 = Number(input)
+
+        console.log(input2);
+            if (yuan.checked) {
+                input = (input * this.state.conversion.Yuan);
+                this.setState({
+                    converted: {
+                        yuan: (input / this.state.conversion.Yuan)
+                    }
+                })
+                console.log(input);
+            }
+}
+    changingOutput = e => {
+        console.log(input);
+    }
     //         this.setState({
     //   converted: {
     //     rupee: (input / (this.state.conversion.Rupee)),
@@ -103,23 +121,22 @@ class Home extends React.Component {
     //     euro: ((this.state.convertedUSD.euro) / (this.state.conversion.Euro))
     //   }
     // });
-    // }
     render() {
         return (
             <div className="background">
                 <div className="App-header">
                     <p className="oblique">Which currency would you like to switch from?</p>
-                    <form id='clicked' onSubmit={this.changingInput.bind(this)} method='POST'>
+                    <form id='clicked' onSubmit={this.handleClick.bind(this)} method='POST'>
                         <label >
-                            <input className="form-radio" type="radio" value="Dollar" name="optradio" id='clickedDollar'/>
+                            <input className="form-radio" type="radio" value="Dollar" name="optradio" id='clickedDollar' onClick={this.handleClick.bind(this)} />
                             <label htmlFor="USD">USD $</label>
-                            <input className="form-radio" type="radio" value="Euro" name="optradio" id='clickedEuro' />
+                            <input className="form-radio" type="radio" value="Euro" name="optradio" id='clickedEuro' onClick={this.handleClick.bind(this)} />
                             <label htmlFor="USD">Euro &euro;</label>
-                            <input className="form-radio" type="radio" value="Pound" name="optradio" id='clickedPound' />
+                            <input className="form-radio" type="radio" value="Pound" name="optradio" id='clickedPound' onClick={this.handleClick.bind(this)} />
                             <label htmlFor="USD">Pound &#xa3;</label>
-                            <input className="form-radio" type="radio" value="Rupee" name="optradio" id='clickedRupee' />
+                            <input className="form-radio" type="radio" value="Rupee" name="optradio" id='clickedRupee' onClick={this.handleClick.bind(this)} />
                             <label htmlFor="USD">Rupee &#x20A8;</label>
-                            <input className="form-radio" type="radio" value="Yuan" name="optradio" id='clickedYuan' />
+                            <input className="form-radio" type="radio" value="Yuan" name="optradio" id='clickedYuan' onClick={this.handleClick.bind(this)} />
                             <label htmlFor="USD">Yuan &#x5143;</label>
                         </label>
                     </form>
@@ -127,12 +144,12 @@ class Home extends React.Component {
                     <br />
                     <form >
                         <label htmlFor="currencyInput">Enter currency amount: </label>
-                        <input type="number" name='inputCurr' className='inputCurr' placeholder="Enter amount" id="inputBox" />
-                        <button type="submit" className="submitButton">Submit</button>
+                        <input type="number" name='inputCurr' placeholder="Enter amount" id='inputCurr' onChange={this.handleClick.bind(this)} />
+                        <button type="button" className="submitButton" /*onSubmit={this.changingOutput.bind(this)}*/>Submit</button>
                     </form>
                     <br />
                     <br />
-                    <form id='clicked2' /*onSubmit={this.changingOutput.bind(this)}*/ method='POST'>
+                    <form id='clicked2' method='POST'>
                         <p>Which currency would you like to switch to?</p>
                         <label >
                             <input className="form-radio" type="radio" value="USD1" name="optradio2" id='outputDollar' />
@@ -153,5 +170,4 @@ class Home extends React.Component {
         );
     };
 }
-
 export default Home
