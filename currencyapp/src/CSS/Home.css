@@ -3,20 +3,8 @@
     color: white;
     filter: brightness(100%);
     font-size: 60px;
-<<<<<<< HEAD
 }
 .App-header {
-=======
-  }
-  
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .App-header {
->>>>>>> parent of b75aaa8... timestamp completed for all destinations via Taylor
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,19 +12,8 @@
     justify-content: center;
     /* font-size: calc(10px + 2vmin); */
     color: white;
-<<<<<<< HEAD
 }  
 @keyframes App-logo-spin {
-=======
-    filter: brightness(100%)
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
->>>>>>> parent of b75aaa8... timestamp completed for all destinations via Taylor
     from {
       transform: rotate(0deg);
     }
@@ -50,31 +27,9 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-<<<<<<< HEAD
 /*Button Styling*/
 input[type="radio"]{
     margin: 0 10px 0 10px;
-=======
-
-/* Dropdown css */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    top:45px;
-    right:0px;
-    width: 200px;
-    background-color: white;
-    font-weight:bold;
-    position: absolute;
-
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
->>>>>>> parent of b75aaa8... timestamp completed for all destinations via Taylor
 }
 .form-radio{
      -webkit-appearance: none;
@@ -103,7 +58,6 @@ ul {
      transform: rotate(40deg);
      color: #666;
 }
-<<<<<<< HEAD
 .form-radio:hover{
      background-color: #f7f7f7;
 }
@@ -127,20 +81,10 @@ label {
 .currencyInput{
     width: 40%;
     padding: 11px 20px;
-=======
-li:last-child {
-    border-bottom: none;
-}*/
-li:hover {
-    background-color: #e5e5e5;
-    color: white;
->>>>>>> parent of b75aaa8... timestamp completed for all destinations via Taylor
 }
 .submitButton {
     padding: 12px 20px;
 }
-<<<<<<< HEAD
-=======
 .button:before{
     content:"";
     position:absolute;
@@ -150,5 +94,6 @@ li:hover {
     border-color: white transparent transparent transparent;
     right:6px;
     top:18px;
+
 }
->>>>>>> parent of b75aaa8... timestamp completed for all destinations via Taylor
+
