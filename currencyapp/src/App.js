@@ -1,8 +1,12 @@
 import React from 'react';
+
+//import logo from './logo.svg';
+
 import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from "./Components/Home";
 import ConversionComp from "./Components/ConversionComp";
+import Login from "./Components/Login";
 import China from "./destinations/China";
 import India from "./destinations/India";
 import US from "./destinations/US";
@@ -21,6 +25,7 @@ class App extends React.Component{
           <Route path = "/UK" component = {UK} />
           <Route path = "/US" component = {US} />
           <Route path = "/EU" component = {EU} />
+          <Route path = "/Login" component = {Login} />
           <Route component = {Error} />
         </Switch>
     </BrowserRouter>
