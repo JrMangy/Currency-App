@@ -1,45 +1,49 @@
 /* Main Background */
-.App {
-    text-align: center;
-    background-size: cover;
-    height: 100%;
-    background-position: center; 
-    background-image: url('https://cdn.suwalls.com/wallpapers/vector/currency-9975-1920x1200.jpg');
-  }
-  .headerText{
+.headerText{
     color: white;
     filter: brightness(100%);
     font-size: 60px;
+<<<<<<< HEAD
   }
   
 
   
   .App-header {
+=======
+}
+.App-header {
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    /* font-size: calc(10px + 2vmin); */
     color: white;
+<<<<<<< HEAD
     filter: brightness(100%)
   }
 
   
   @keyframes App-logo-spin {
+=======
+}  
+@keyframes App-logo-spin {
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
     }
-  }
-
-
-.Background {
-    text-align: center;
-    background-image: url('https://cdn.suwalls.com/wallpapers/vector/currency-9975-1920x1200.jpg');
 }
+.background {
+    text-align: center;
+    background-image: url('../Components/images/CurrencyBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+<<<<<<< HEAD
 
 /* Dropdown css */
 /* .dropdown {
@@ -59,31 +63,73 @@
 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+=======
+/*Button Styling*/
+input[type="radio"]{
+    margin: 0 10px 0 10px;
 }
-/*li a {
-    color: #000;
-    text-decoration: none;
+.form-radio{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+     font-size: 5px;
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
 }
-li {
-    padding: 8px 16px;
-    border-bottom: 1px solid #e5e5e5;
+.form-radio:checked::before{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+     color: #666;
 }
+.form-radio:hover{
+     background-color: #f7f7f7;
+}
+<<<<<<< HEAD
 li:last-child {
     border-bottom: none;
 }*/
 /* li:hover {
     background-color: #e5e5e5;
     color: white;
+=======
+.form-radio:checked{
+     background-color: #f1f1f1;
+     color: chartreuse;
 }
-.button{
-    width:178px;
-    height:18px;
-    background-color:#ff3232 ;
-    padding:12px;
-    border-radius:5px;
-    font-weight:bold;
-    color:white;
+/*Text Styling*/
+label {
+     font: 15px/1.7 'Open Sans', sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+     font-size: 25px;
+     color: white;
+} 
+.oblique{
+    font-style: oblique;
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
 }
+/*Text Box*/
+.currencyInput{
+    width: 40%;
+    padding: 11px 20px;
+}
+<<<<<<< HEAD
 .button:before{
     content:"";
     position:absolute;
@@ -94,3 +140,8 @@ li:last-child {
     right:6px;
     top:18px; 
 } */
+=======
+.submitButton {
+    padding: 12px 20px;
+}
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
