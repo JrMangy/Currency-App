@@ -1,7 +1,25 @@
 .slide {
     width: 400px;
     height: 300px;
+<<<<<<< HEAD
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.infoBox {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 1400px;
+    text-align: center;
+    background-color: white;
+    background: radial-gradient(white, transparent)
+}
+.destination {
+    display: inline-block;
+    text-align: left
+}
+=======
 };
 /* .destination {
     align-content: center;
 } */
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4

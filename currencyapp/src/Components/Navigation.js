@@ -8,7 +8,11 @@ const Navigation = () => {
 
     return(
         <div className="nav">
+<<<<<<< HEAD
+            <NavLink to="/" className="home"> 
+=======
             <NavLink to="/" class="home"> 
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
             <img src={leftArrow} alt="arrow" className="arrowImage"></img>
               Back to Home  |
             </NavLink>
@@ -18,7 +22,6 @@ const Navigation = () => {
             <NavLink to="/UK" className="uk">  UK  |</NavLink>
             <NavLink to="/US" className="us">  US  |</NavLink>
             <NavLink to="/EU" className="eu">  EU  |</NavLink>
-            <NavLink to="/Login" className="login">  Login</NavLink>
             
         </div>
     )

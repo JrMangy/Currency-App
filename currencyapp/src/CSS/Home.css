@@ -3,8 +3,16 @@
     color: white;
     filter: brightness(100%);
     font-size: 60px;
+<<<<<<< HEAD
+  }
+  
+
+  
+  .App-header {
+=======
 }
 .App-header {
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,8 +20,16 @@
     justify-content: center;
     /* font-size: calc(10px + 2vmin); */
     color: white;
+<<<<<<< HEAD
+    filter: brightness(100%)
+  }
+
+  
+  @keyframes App-logo-spin {
+=======
 }  
 @keyframes App-logo-spin {
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
     from {
       transform: rotate(0deg);
     }
@@ -27,6 +43,27 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+<<<<<<< HEAD
+
+/* Dropdown css */
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+} */
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top:45px;
+    right:0px;
+    width: 200px;
+    background-color: white;
+    font-weight:bold;
+    position: absolute;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+=======
 /*Button Styling*/
 input[type="radio"]{
     margin: 0 10px 0 10px;
@@ -48,6 +85,7 @@ input[type="radio"]{
      margin-right: 7px;
      outline: none;
      font-size: 5px;
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
 }
 .form-radio:checked::before{
      position: absolute;
@@ -61,6 +99,14 @@ input[type="radio"]{
 .form-radio:hover{
      background-color: #f7f7f7;
 }
+<<<<<<< HEAD
+li:last-child {
+    border-bottom: none;
+}*/
+/* li:hover {
+    background-color: #e5e5e5;
+    color: white;
+=======
 .form-radio:checked{
      background-color: #f1f1f1;
      color: chartreuse;
@@ -76,12 +122,26 @@ label {
 } 
 .oblique{
     font-style: oblique;
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
 }
 /*Text Box*/
 .currencyInput{
     width: 40%;
     padding: 11px 20px;
 }
+<<<<<<< HEAD
+.button:before{
+    content:"";
+    position:absolute;
+    width:0px;
+    height:0px;
+    border: 10px solid;
+    border-color: white transparent transparent transparent;
+    right:6px;
+    top:18px; 
+} */
+=======
 .submitButton {
     padding: 12px 20px;
 }
+>>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
