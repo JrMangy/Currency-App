@@ -48,5 +48,4 @@ class InputBox extends React.Component {
     }
 }
 
-
 export default InputBox
