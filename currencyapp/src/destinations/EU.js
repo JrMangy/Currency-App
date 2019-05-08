@@ -50,14 +50,20 @@ render() {
                     <li>Fira, Santorini, Greece</li>
                     <li>Louvre Museum, Paris, France</li>
                 </ul>    
-            <p>Western European Time (UTC) Central European Time (UTC+1) Eastern European Time (UTC+2) Seasonal daylight savings time is used in some member states.</p>
+            <p>Western European Time (UTC)</p>
+                <p>Central European Time (UTC+1) </p>
+                <p>Eastern European Time (UTC+2)</p>
+                <p>Seasonal daylight savings time is used in some member states.</p>   
             <br/>
-            <button onClick={parisTime.toLocaleString()}>
-            Ultimately, this button is useless! But below is the current time in Paris!</button>
+            {/* <button onClick={parisTime.toLocaleString()}>
+            Ultimately, this button is useless! But below is the current time in Paris!</button> */}
+            <br/>
+            <div className="clock">
                 <p>Your local time is {now.toLocaleString()}</p>
                 <p>The current time in Paris is {parisTime.toLocaleString()}</p>
                 <p>The current time in Rome is {romeTime.toLocaleString()}</p>
                 <p>The current time in Santorini is {athensTime.toLocaleString()}</p>
+                </div>
             <p>*The United Kingdom voted in 2016 to end its membership in the European Union. 
                 <br/>
                 The process is due to be completed in October 2019.</p>

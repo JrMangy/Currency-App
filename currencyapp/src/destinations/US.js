@@ -46,14 +46,18 @@ render() {
                 </ul>                
             <p>Atlantic, Eastern, Central, Mountain, Pacific, Alaska, and Hawaii-Aleutian Standard Times (UTC-4 through UTC-10).</p>
             <p>In territories:</p>
-            <ul>
+            <ul className="timeZones">
                 <li>Samoa (UTC-11) in American Samoa</li>
                 <li>Chamorro (UTC+10) in Guam and the commonwealth of the Northern Mariana Islands</li>
             </ul>
-            <p>Your time now is: {now.toLocaleString()}</p>
-            <p>The current time in Arizona is: {arizonaTime.toLocaleString()}</p>
-            <p>The current time in New Orleans is: {noLaTime.toLocaleString()}</p>
-            <p>The current time in New York is: {nYTime.toLocaleString()}</p>
+            <br/>
+            <br/>
+            <div className="clock">
+                <p>Your time now is: {now.toLocaleString()}</p>
+                <p>The current time in Arizona is: {arizonaTime.toLocaleString()}</p>
+                <p>The current time in New Orleans is: {noLaTime.toLocaleString()}</p>
+                <p>The current time in New York is: {nYTime.toLocaleString()}</p>
+            </div>
         </div>
     </div>
     ) //end return
