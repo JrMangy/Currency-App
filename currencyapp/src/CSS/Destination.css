@@ -33,4 +33,9 @@
     border: inset;
     border-width: 15px;
     }
-    
+.slideShow {
+    width: 100%;
+    background: transparent;
+    height: 300px;
+    display: inline-block;
+    }

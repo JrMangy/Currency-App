@@ -6,6 +6,7 @@ import ForbiddenCity from "../Components/images/china-forbidden-city-beijing.JPG
 import GreatWall from "../Components/images/china-great-wall.JPG";
 import Terracotta from "../Components/images/china-terracotta-warriors-xian.jpg";
 import bkgd from "../Components/images/travel.jpg";
+//import ChinaSlideshow from "./ChinaSlideshow.js";
 
 var now = new Date().toLocaleString("en-US");
 now = new Date(now);
@@ -27,7 +28,10 @@ render() {
             <img className="slide" src={ForbiddenCity} alt="ForbiddenCity"></img>
             <img className="slide" src={GreatWall} alt="GreatWall"></img>
             <img className="slide" src={Terracotta} alt="Terracotta"></img>
-            {/* slideshow */}
+            {/* <div className="slideShow">
+             <ChinaSlideshow/> 
+            </div> */}
+            <div className="text">
             <h3>Languages</h3>
             <p>official language: Modern Standard Mandarin
                 <br/>
@@ -37,7 +41,8 @@ render() {
                     <li>Forbidden City</li>
                     <li>Great Wall</li>
                     <li>Xi'an Terracotta Warriors</li>
-                </ul>                
+                </ul>    
+                </div>            
             <p>China Standard Time (UTC+8)</p>
             <div className="clock">
                 <p>Your local time is: {now.toLocaleString()}</p>

@@ -9,8 +9,8 @@ const Navigation = () => {
     return(
         <div className="nav">
             <NavLink to="/" className="home"> 
-            <img src={leftArrow} alt="arrow" className="arrowImage"></img>
-              Back to Home  |
+            {/* <img src={leftArrow} alt="arrow" className="arrowImage"></img> */}
+            &#10094;  Back to Home  |
             </NavLink>
             <NavLink to="/ConversionComp" className="comp"></NavLink>
             <NavLink to="/China" className="china">  China  |</NavLink>
