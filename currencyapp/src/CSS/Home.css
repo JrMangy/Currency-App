@@ -85,15 +85,3 @@ label {
 .submitButton {
     padding: 12px 20px;
 }
-.button:before{
-    content:"";
-    position:absolute;
-    width:0px;
-    height:0px;
-    border: 10px solid;
-    border-color: white transparent transparent transparent;
-    right:6px;
-    top:18px;
-
-}
-
