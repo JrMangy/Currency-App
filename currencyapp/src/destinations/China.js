@@ -1,5 +1,5 @@
 import React from 'react'
-import firebase from 'firebase'
+//import firebase from 'firebase'
 import '../CSS/Destination.css'
 import NavLink from '../Components/Navigation';
 import ForbiddenCity from "../Components/images/china-forbidden-city-beijing.JPG";

@@ -1,5 +1,5 @@
 import React from 'react'
-import firebase from 'firebase'
+//import firebase from 'firebase'
 import '../CSS/Destination.css'
 import NavLink from '../Components/Navigation';
 import FrenchQuarter from "../Components/images/us-french-quarter-new-orleans.jpg";
