@@ -7,7 +7,7 @@ const Navigation = () => {
     
 
     return(
-        <div class="nav">
+        <div className="nav">
             <NavLink to="/" class="home"> 
             <img src={leftArrow} alt="arrow" className="arrowImage"></img>
               Back to Home  |
