@@ -16,13 +16,13 @@ class InputBox extends React.Component {
             fromDollar: 0,
             output: 0,
             outputText: '',
-            userCurrency: '',
-            outputCurrency: ''
+            inName: '',
+            outName: ''
         }
     }
     //asdf
-    componentDidMount() {
-        const userValue = database.ref('UserValue/value/');
+    async componentDidMount() {
+        const userValue = await database.ref('UserValue/value/');
         userValue.on('value', snap => {
             console.log(snap.val());
             this.setState({ userValue: snap.val() });
@@ -39,6 +39,14 @@ class InputBox extends React.Component {
         output.on('value', snap => {
             this.setState({ output: snap.val() })
         })
+        const inName = database.ref('UserCurrencyValue/value/');
+        inName.on('value', snap => {
+            this.setState({ inName: snap.val() })
+        })
+        const outName = database.ref('OutputCurrencyValue/value/');
+        outName.on('value', snap => {
+            this.setState({ outName: snap.val() })
+        })
     }
     handleSubmit(e) {
         e.preventDefault();
@@ -46,33 +54,10 @@ class InputBox extends React.Component {
         database.ref('UserValue/value/').set(parseFloat(val));
         var output = ((parseFloat(val) * parseFloat(this.state.toDollar) * parseFloat(this.state.fromDollar)));
         database.ref('OutputValue/value/').set(parseFloat(output).toFixed(2));
-        // this.props.history.push('./ConversionComp');
-        this.setState({
-            outputText: `You have converted ${this.state.userValue} currency to ${output.toFixed(2)} currency. Click here to find out more!!!`
+        // this.props.history.push('./ConversionComp');       
+         this.setState({
+            outputText: `You have converted ${this.state.userValue} ${this.state.inName} to ${output.toFixed(2)} ${this.state.outName}. Click here to find out more about where this currency is mostly used!!!`
         });
-        switch (this.state.toDollar) {
-            case (this.state.toDollar == 1):
-                this.setState({
-                    userCurrency: 'dollars'
-                });
-            case (this.state.toDollar == 1.12343891):
-                this.setState({
-                    userCurrency: 'euros'
-                });
-            case (this.state.toDollar == 1.301573211):
-                this.setState({
-                    userCurrency: 'pounds'
-                });
-            case (this.state.toDollar == 0.146489882):
-                this.setState({
-                    userCurrency: 'rupees'
-                });
-            case (this.state.toDollar == 0.014234579):
-                this.setState({
-                    userCurrency: 'yuan'
-                });
-
-        }
     }
     buttonClick() {
 
