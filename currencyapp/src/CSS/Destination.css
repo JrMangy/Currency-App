@@ -1,7 +1,7 @@
 .slide {
     width: 400px;
     height: 300px;
-<<<<<<< HEAD
+
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -17,9 +17,25 @@
     display: inline-block;
     text-align: left
 }
-=======
-};
-/* .destination {
-    align-content: center;
-} */
->>>>>>> 34f611adaddd411c7f078e5f0da7dfc88a8632c4
+.timeZones {
+    display: inline-block;
+    text-align: left  
+}
+.clock {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 20px;
+    background-color:rgb(115, 115, 180);
+    color: white;
+    width: 430px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    border: inset;
+    border-width: 15px;
+    }
+.slideShow {
+    width: 100%;
+    background: transparent;
+    height: 300px;
+    display: inline-block;
+    }

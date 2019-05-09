@@ -1,55 +1,75 @@
-import React from 'react'
-import '../Components/destinations/ChinaSlideshow.css'
-import ForbiddenCity from "../Components/images/china-forbidden-city-beijing.JPG";
-import GreatWall from "../Components/images/china-great-wall.JPG";
-import Terracotta from "../Components/images/china-terracotta-warriors-xian.jpg";
+// import React from 'react'
+// import './ChinaSlideshow.css'
+// import ForbiddenCity from "../Components/images/china-forbidden-city-beijing.JPG";
+// import GreatWall from "../Components/images/china-great-wall.JPG";
+// import Terracotta from "../Components/images/china-terracotta-warriors-xian.jpg";
+// let slideIndex = 1;
+// var slides;
+// let dots;
+// class ChinaSlideshow extends React.Component {
+// componentWillMount() {
+//   slides = document.getElementsByClassName("mySlides");
+//   dots = document.getElementsByClassName("dot");
+  
+// }
+  
+//   // showSlides(slideIndex);
+  
+//   // Next/previous controls
+//    plusSlides(n) {
+//     this.showSlides(slideIndex += n);
+//   }
+  
+//   // Thumbnail image controls
+//    currentSlide(n) {
+//     this.showSlides(slideIndex = n);
+//   }
+  
+//    showSlides(n) {
+//     var i;
+//     if (n > slides.length) {slideIndex = 1} 
+//     if (n < 1) {slideIndex = slides.length}
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none"; 
+//     }
+//     for (i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(" active", "");
+//     }
+//     // slides[slideIndex-1].style.display = "block"; 
+//     // dots[slideIndex-1].className += " active";
+//   }
 
-class ChinaSlideshow extends Component {
-    
-render() {
-  return (
-    <div class="orbit clean-hero-slider" role="region" aria-label="Favorite Space Pictures" data-orbit>
-    <div class="orbit-wrapper">
-      <div class="orbit-controls">
-        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-      </div>
-      <ul class="orbit-container">
-        <li class="orbit-slide">
-          <figure class="orbit-figure">
-            <img class="orbit-image" src="//lorempixel.com/800/350/" alt="image alt text">
-            <figcaption class="orbit-caption">
-              <h3>Lorem Ipsum Etiam</h3>
-              <p>Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.</p>
-              <a href="#" class="button yellow">Mattis Elit</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="orbit-slide">
-          <figure class="orbit-figure">
-            <img class="orbit-image" src="//lorempixel.com/800/350/" alt="image alt text">
-            <figcaption class="orbit-caption">
-              <h3>Ipsum Ornare Ultricies</h3>
-              <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#" class="button yellow">Egestas Amet</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="orbit-slide">
-          <figure class="orbit-figure">
-            <img class="orbit-image" src="//lorempixel.com/800/350/" alt="image alt text">
-            <figcaption class="orbit-caption">
-              <h3>Malesuada Parturient</h3>
-              <p>Fusce dapibus, tellus ac cursus commodo, sit amet risus. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam sit amet non magna.</p>
-              <a href="#" class="button yellow">Sollicitudin</a>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-    </div>
-    <nav class="orbit-bullets">
-      <button class="is-active" data-slide="1"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
-      <button data-slide="2"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
-      <button data-slide="3"><span class="show-for-sr">Lorem Ipsum Etiam</span></button>
-    </nav>
-  </div>
+// render() {
+//   return (
+//   <div>
+// <div className="slideshow-container">
+
+//   <div className="mySlides fade">
+//     <img src={ForbiddenCity} style={{width:"100%"}}/>
+//     <div className="text">Forbidden City</div>
+//   </div>
+
+//   <div className="mySlides fade">
+//     <img src={GreatWall} style={{width:"100%"}}/>
+//     <div className="text">Great Wall of China</div>
+//   </div>
+
+//   <div className="mySlides fade">
+//     <img src={Terracotta} style={{width:"100%"}}/>
+//     <div className="text">Terracotta Warriors</div>
+//   </div>
+//   <a className="prev" onclick={this.plusSlides(-1)}>&#10094;</a>
+//   <a className="next" onclick={this.plusSlides(1)}>&#10095;</a>
+// </div>
+
+// <br/>
+
+// <div style={ {alignContent: "center"}} >
+//   <span className="dot" onclick={this.currentSlide(1)}></span> 
+//   <span className="dot" onclick={this.currentSlide(2)}></span> 
+//   <span className="dot" onclick={this.currentSlide(3)}></span> 
+// </div>
+//   </div>
+//   )}}
+
+//   export default ChinaSlideshow

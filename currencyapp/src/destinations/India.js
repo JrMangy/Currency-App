@@ -26,7 +26,7 @@ render() {
             <img className="slide" src={Backwaters} alt=""></img>
             <img className="slide" src={Baga} alt=""></img>
             <img className="slide" src={Golden} alt=""></img>
-            {/* slideshow */}
+            {/* slideshow here */}
             <h3>Languages</h3>
             <p>Hindi and English are employed at the national level, with another 22 languages officially designated for regional use.</p>
             <h3>Popular Tourist Destinations</h3>
@@ -37,8 +37,10 @@ render() {
                 </ul>                
             <p>Indian Standard Time (UTC+5:30)</p>
             <br/>
-            <p>Your local time is: {now.toLocaleString()}</p>
-            <p>The current time in India is: {indiaTime.toLocaleString()}</p>
+            <div className="clock">
+                <p>Your local time is: {now.toLocaleString()}</p>
+                <p>The current time in India is: {indiaTime.toLocaleString()}</p>
+            </div>
         </div>
         </div>
     ) //end return
