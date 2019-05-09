@@ -10,8 +10,8 @@ class RadioTwo extends React.Component {
             dollar: 1,
             euro: 0.89,
             pound: 0.77,
-            yuan: 6.78,
-            rupee: 69.76
+            yuan: 6.67,
+            rupee: 71.43
         }
     }
     handleOutput() {
