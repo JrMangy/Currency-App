@@ -1,11 +1,8 @@
 import React from 'react'
-import firebase from 'firebase'
 import '../CSS/Home.css'
 import InputBox from './Home Components/inputBox.js'
 import RadioOne from './Home Components/radioOne.js'
 import RadioTwo from './Home Components/radioTwo.js'
-
-const database = firebase.database();
 
 class Home extends React.Component {
     constructor() {
@@ -29,7 +26,6 @@ class Home extends React.Component {
                     <br />
                     <br />
                     <InputBox />
-                    <p>Printing input:  </p>
                 </div>
             </div>
         );

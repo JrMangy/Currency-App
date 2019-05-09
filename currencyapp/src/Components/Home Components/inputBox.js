@@ -1,8 +1,8 @@
 import React from 'react';
-import Proptypes from 'prop-types'
 import '../../CSS/Home.css'
 import database from '../firebase.js'
-import {Link} from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
+import OutlinedButtons from '../Home Components/Home Css/Button.js'
 
 class InputBox extends React.Component {
     constructor(props) {
@@ -30,10 +30,12 @@ class InputBox extends React.Component {
         })
     }
     handleSubmit(e) {
+        e.preventDefault();
         let val = e.target.elements.inputCurr.value;
         database.ref('UserValue/value/').set(parseFloat(val));
         var output = ((parseFloat(val) * parseFloat(this.state.toDollar) * parseFloat(this.state.fromDollar)));
-        database.ref('OutputValue/value/').set(parseFloat(output).toFixed(2))
+        database.ref('OutputValue/value/').set(parseInt(output).toFixed(2));
+        this.props.history.push('./ConversionComp');
     }
     render() {
         return (
@@ -41,11 +43,13 @@ class InputBox extends React.Component {
                 <form className="Submission" onSubmit={this.handleSubmit}>
                     <label htmlFor="currencyInput">Enter currency amount: </label>
                     <input type="number" placeholder="Enter amount" name='inputCurr' />
-                    <button type="submit" className="submitButton"><Link to='../ConversionComp'>Submit</Link></button>
+
+                    {/* <button type="submit" className="submitButton">Submit</button> */}
+                    <OutlinedButtons />
                 </form>
             </div>
         )
     }
 }
 
-export default InputBox
+export default withRouter(InputBox)
