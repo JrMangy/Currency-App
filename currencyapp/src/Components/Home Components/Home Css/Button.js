@@ -15,8 +15,8 @@ const styles = theme => ({
 function OutlinedButtons(props) {
   const { classes } = props;
   return (
-      <Button variant="outlined" type='submit' color="secondary" className={classes.button}>
-        Secondary
+      <Button variant="outlined" type='submit' color="secondary" className={classes.button} >
+        Calculate
       </Button>
   );
 }
