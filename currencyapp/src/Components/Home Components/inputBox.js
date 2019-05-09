@@ -15,6 +15,7 @@ class InputBox extends React.Component {
             fromDollar: 0
         }
     }
+    //asdf
     componentDidMount() {
         const userValue = database.ref('UserInput/value/');
         userValue.on('value', snap => {
