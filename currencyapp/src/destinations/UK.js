@@ -41,8 +41,11 @@ render() {
                 </ul>                
             <p>Western European Time (UTC)</p>
             <p>British Summer Time / Western European Summer Time (UTC+1)</p>
-            <p>Your current time is: {now.toLocaleString()}</p>
-            <p>The current time in the United Kingdom is: {ukTime.toLocaleString()}</p>
+            <br/>
+            <div className="clock">
+                <p>Your current time is: {now.toLocaleString()}</p>
+                <p>The current time in the United Kingdom is: {ukTime.toLocaleString()}</p>
+            </div>
         </div>
         </div>
     ) //end return
