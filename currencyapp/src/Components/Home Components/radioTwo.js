@@ -6,12 +6,12 @@ class RadioTwo extends React.Component {
         super();
         this.handleOutput = this.handleOutput.bind(this);
         this.state = {
-            value: 9,
+            value: 0,
             dollar: 1,
-            euro: 0.89,
-            pound: 0.77,
-            yuan: 6.67,
-            rupee: 71.43
+            euro: 0.890124056,
+            pound: 0.768301,
+            yuan: 6.826410031,
+            rupee: 70.251463
         }
     }
     handleOutput() {

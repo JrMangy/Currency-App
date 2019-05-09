@@ -1,5 +1,5 @@
 import React from 'react';
-import database from '../firebase'
+import database from '../firebase.js'
 
 class RadioOne extends React.Component {
     constructor() {
@@ -8,10 +8,10 @@ class RadioOne extends React.Component {
         this.state = {
             value: 9,
             dollar: 1,
-            euro: 1.12,
-            pound: 1.21,
-            yuan: 0.15,
-            rupee: 0.014
+            euro: 1.12343891,
+            pound: 1.301573211,
+            yuan: 0.146489882,
+            rupee: 0.014234579
 
 
             
