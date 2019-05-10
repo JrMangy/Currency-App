@@ -11,7 +11,6 @@ const styles = theme => ({
     display: 'none',
   },
 });
-
 function OutlinedButtons(props) {
   const { classes } = props;
   return (
@@ -20,9 +19,7 @@ function OutlinedButtons(props) {
       </Button>
   );
 }
-
 OutlinedButtons.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-
 export default withStyles(styles)(OutlinedButtons);

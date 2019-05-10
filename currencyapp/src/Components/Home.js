@@ -5,9 +5,6 @@ import RadioOne from './Home Components/radioOne.js'
 import RadioTwo from './Home Components/radioTwo.js'
 
 class Home extends React.Component {
-    constructor() {
-        super();
-    }
     render() {
         return (
             <div className="background">
