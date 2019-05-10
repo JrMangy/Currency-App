@@ -1,6 +1,5 @@
 import React from 'react';
-import database from '../firebase'
-
+import database from '../firebase.js'
 class RadioOne extends React.Component {
     constructor() {
         super();
@@ -8,37 +7,49 @@ class RadioOne extends React.Component {
         this.state = {
             value: 9,
             dollar: 1,
-            euro: 1.12,
-            pound: 1.21,
-            yuan: 0.15,
-            rupee: 0.014
-
-
-            
-           
+            euro: 1.12343891,
+            pound: 1.301573211,
+            yuan: 0.146489882,
+            rupee: 0.014234579,
+            dollarN: 'dollars',
+            euroN: 'euros',
+            poundN: 'pounds',
+            yuanN: 'yuan',
+            rupeeN: 'rupees'
         }
     }
     handleClick() {
         if (document.getElementById('clickedDollar').checked) {
-            database.ref('ToDollarValue').set({
-                value: this.state.dollar
-            })
+            database.ref('ToDollarValue').set({value: this.state.dollar});
+            database.ref('UserCurrencyValue/').set({value: this.state.dollarN});
         } else if (document.getElementById('clickedEuro').checked) {
             database.ref('ToDollarValue').set({
                 value: this.state.euro
-            })
+            });
+            database.ref('UserCurrencyValue').set({
+                value: this.state.euroN
+            });
         } else if (document.getElementById('clickedPound').checked) {
             database.ref('ToDollarValue').set({
                 value: this.state.pound
-            })
+            });
+            database.ref('UserCurrencyValue').set({
+                value: this.state.poundN
+            });
         } else if (document.getElementById('clickedYuan').checked) {
             database.ref('ToDollarValue').set({
                 value: this.state.yuan
-            })
+            });
+            database.ref('UserCurrencyValue').set({
+                value: this.state.yuanN
+            });
         } else if (document.getElementById('clickedRupee').checked) {
             database.ref('ToDollarValue').set({
                 value: this.state.rupee
-            })
+            });
+            database.ref('UserCurrencyValue').set({
+                value: this.state.rupeeN
+            });
         }
     }
     render() {
@@ -59,5 +70,4 @@ class RadioOne extends React.Component {
         )
     }
 }
-
 export default RadioOne

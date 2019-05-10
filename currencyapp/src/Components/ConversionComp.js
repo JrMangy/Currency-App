@@ -1,40 +1,64 @@
-
 import React from "react";
-import NavLink from "./Navigation";
-import '../CSS/ConversionComp.css';
-
-
+import database from './firebase'
+import '../CSS/Home.css'
+import { withRouter } from 'react-router-dom'
+import BackLink from './BackLink'
 
 class ConversionComp extends React.Component {
-    
+    constructor(props) {
+        super(props);
+        this.clickSubmit = this.clickSubmit.bind(this);
+        this.state = {
+            output: 0,
+            userValue: 0,
+            inName: '',
+            outName: ''
+        }
+    }
+    componentDidMount() {
+        const inName = database.ref('UserCurrencyValue/value/');
+        inName.on('value', snap => {
+            this.setState({ inName: snap.val() })
+        });
+        const outName = database.ref('OutputCurrencyValue/value/');
+        outName.on('value', snap => {
+            this.setState({ outName: snap.val() })
+        });
+        const output = database.ref('OutputValue/value/');
+        output.on('value', snap => {
+            this.setState({ output: snap.val() })
+        });
+        const userValue = database.ref('UserValue/value/');
+        userValue.on('value', snap => {
+            console.log(snap.val());
+            this.setState({ userValue: snap.val() });
+        });
+    }
+    clickSubmit() {
+        console.log(this.state.outName);
+        if (this.state.outName === 'dollars') {
+            this.props.history.push('/US')
+        } else if (this.state.outName === 'euros') {
+            this.props.history.push('/EU')
+        } else if (this.state.outName === 'pounds') {
+            this.props.history.push('/UK')
+        } else if (this.state.outName === 'rupees') {
+            this.props.history.push('/India')
+        } else if (this.state.outName === 'yuan') {
+            this.props.history.push('/China')
+        }
+    }
     render() {
-    return (
-        
-        
-        <div className="Body">
-            <NavLink /> 
-           
-           <div className="Section">
-           <div className="Title">
-           <h1>Currency Conversion</h1>
-           </div>
-           <div className="Container"> 
-           <ul className='Mylist'>
-                
-                <li><a  href="#Create Page">Choose your money's worth:</a></li>
-                
-                <li><a href="#dollars">USD $</a></li>
-                <li><a href="#Euro">Euro &#x20AC;</a></li>
-                <li><a href="#Pounds">Pound &#xa3;</a></li>
-                <li><a href="#Rupee">Rupee &#x20A8;</a></li>
-                <li><a href="#Setting">Yuan &#x5143;</a></li>
-
-            </ul> 
+        return (
+            <div className='background'>
+                <BackLink />
+                <div className='App-header'>
+                    <p>You have converted {this.state.userValue} {this.state.inName} to {this.state.output} {this.state.outName}. Click here to find out more about where this currency is mostly used!!!</p>
+                    <button className='submitButton' onClick={this.clickSubmit}></button>
+                    <p></p>
+                </div>
             </div>
-            </div>
-        </div>
-    )}
+        )
+    }
 }
-
-
-export default ConversionComp
+export default withRouter(ConversionComp)
