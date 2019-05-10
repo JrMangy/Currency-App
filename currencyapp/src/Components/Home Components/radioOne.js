@@ -20,12 +20,8 @@ class RadioOne extends React.Component {
     }
     handleClick() {
         if (document.getElementById('clickedDollar').checked) {
-            database.ref('ToDollarValue').set({
-                value: this.state.dollar
-            });
-            database.ref('UserCurrencyValue/').set({
-                value: this.state.dollarN
-            });
+            database.ref('ToDollarValue').set({value: this.state.dollar});
+            database.ref('UserCurrencyValue/').set({value: this.state.dollarN});
         } else if (document.getElementById('clickedEuro').checked) {
             database.ref('ToDollarValue').set({
                 value: this.state.euro
