@@ -9,11 +9,9 @@ import bkgd from "../Components/images/travel.jpg";
 
 var now = new Date().toLocaleString("en-US");
 now = new Date(now);
-console.log('Now it is '+now.toLocaleString());
 
 var indiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Kolkata"});
 indiaTime = new Date(indiaTime);
-console.log('India time: '+indiaTime.toLocaleString())
 
 class India extends React.Component {
 
@@ -23,24 +21,20 @@ render() {
             <NavLink to="/"/>
             <div className="infoBox">
             <h1>India</h1>
-            <img className="slide" src={Backwaters} alt=""></img>
-            <img className="slide" src={Baga} alt=""></img>
-            <img className="slide" src={Golden} alt=""></img>
-            {/* slideshow here */}
-            <h3>Languages</h3>
-            <p>Hindi and English are employed at the national level, with another 22 languages officially designated for regional use.</p>
-            <h3>Popular Tourist Destinations</h3>
-                <ul className="destination">
-                    <li>Backwaters, Alleppey, Kerala</li>
-                    <li>Baga, Goa</li>
-                    <li>Golden Temple, Amritsar</li>
-                </ul>                
-            <p>Indian Standard Time (UTC+5:30)</p>
-            <br/>
             <div className="clock">
                 <p>Your local time is: {now.toLocaleString()}</p>
                 <p>The current time in India is: {indiaTime.toLocaleString()}</p>
             </div>
+            <br/>
+            <div className="pic1"><img className="slide" src={Backwaters} alt=""></img><h3>Backwaters, Alleppey, Kerala</h3></div>
+            <div className="pic2"><img className="slide" src={Baga} alt=""></img><h3>Baga, Goa</h3></div>
+            <div className="pic3"><img className="slide" src={Golden} alt=""></img><h3>Golden Temple, Amritsar</h3></div>
+            <h3>Languages</h3>
+            <p>Hindi and English are employed at the national level, with another 22 languages officially designated for regional use.</p>
+            <h3>Popular Tourist Destinations</h3>                
+            {/* <p>Indian Standard Time (UTC+5:30)</p> */}
+           
+            
         </div>
         </div>
     ) //end return

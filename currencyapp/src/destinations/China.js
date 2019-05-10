@@ -6,15 +6,12 @@ import ForbiddenCity from "../Components/images/china-forbidden-city-beijing.JPG
 import GreatWall from "../Components/images/china-great-wall.JPG";
 import Terracotta from "../Components/images/china-terracotta-warriors-xian.jpg";
 import bkgd from "../Components/images/travel.jpg";
-//import ChinaSlideshow from "./ChinaSlideshow.js";
 
 var now = new Date().toLocaleString("en-US");
 now = new Date(now);
-console.log('Now it is '+now.toLocaleString());
 
 var asiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"});
 asiaTime = new Date(asiaTime);
-console.log('Asia time: '+asiaTime.toLocaleString())
 
 
 class China extends React.Component {  
@@ -25,29 +22,22 @@ render() {
             <NavLink to="/"/>
             <div className="infoBox">
             <h1>China</h1>
-            <img className="slide" src={ForbiddenCity} alt="ForbiddenCity"></img>
-            <img className="slide" src={GreatWall} alt="GreatWall"></img>
-            <img className="slide" src={Terracotta} alt="Terracotta"></img>
-            {/* <div className="slideShow">
-             <ChinaSlideshow/> 
-            </div> */}
+            <div className="clock">
+                <p>Your local time is: {now.toLocaleString()}</p>
+                <p>The current time in China is: {asiaTime.toLocaleString()}</p>
+            </div>
+            <br/>
+            <div className="pic1"><img className="slide" src={ForbiddenCity} alt="ForbiddenCity"></img><h3>Forbidden City</h3></div>
+            <div className="pic2"><img className="slide" src={GreatWall} alt="GreatWall"></img><h3>Great Wall</h3></div>
+            <div className="pic3"><img className="slide" src={Terracotta} alt="Terracotta"></img><h3>Xi'an Terracotta Warriors</h3></div>
             <div className="text">
             <h3>Languages</h3>
             <p>official language: Modern Standard Mandarin
                 <br/>
                 other: Cantonese, Uyghur, Mongolian</p>
-            <h3>Popular Tourist Destinations</h3>
-                <ul className="destination">
-                    <li>Forbidden City</li>
-                    <li>Great Wall</li>
-                    <li>Xi'an Terracotta Warriors</li>
-                </ul>    
-                </div>            
-            <p>China Standard Time (UTC+8)</p>
-            <div className="clock">
-                <p>Your local time is: {now.toLocaleString()}</p>
-                <p>The current time in China is: {asiaTime.toLocaleString()}</p>
-            </div>
+                </div>             
+            {/* <p>China Standard Time (UTC+8)</p> */}
+            
         </div>
         </div>
        

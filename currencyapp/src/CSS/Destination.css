@@ -1,25 +1,24 @@
 .slide {
     width: 400px;
     height: 300px;
-
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px
+}
+.pic1, .pic2, .pic3 {
+    background-color: white;
+    height: 410px;
+    width: 440px;
+    align-content: center;
+    display: inline-block;
+    margin: 10px 10px;
+    border: solid 1px black;
 }
 .infoBox {
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 1400px;
+    width: 100%;
     text-align: center;
     background-color: white;
     background: radial-gradient(white, transparent)
-}
-.destination {
-    display: inline-block;
-    text-align: left
-}
-.timeZones {
-    display: inline-block;
-    text-align: left  
 }
 .clock {
     font-family: 'ZCOOL QingKe HuangYou', cursive;
@@ -32,10 +31,5 @@
     padding-right: 10px;
     border: inset;
     border-width: 15px;
-    }
-.slideShow {
-    width: 100%;
-    background: transparent;
-    height: 300px;
-    display: inline-block;
+    margin-bottom: 20px
     }

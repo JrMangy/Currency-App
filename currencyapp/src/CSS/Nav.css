@@ -1,18 +1,35 @@
 .nav {
   width: 1000px;
-  height: 50px;
-  text-align: center;
-  font-size: 30px;
+  height: 100px;
   margin-top: 0%;
   margin: auto;
   background-color: antiquewhite;
   border: 1px solid;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 5px 10px 20px #888888;
-
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px
 }
-.arrowImage {
-    height: 30px;
-    width:  30px;
-    background-color: transparent;
-};
+.links {
+  text-align: center;
+  font-size: 30px;
+  width: 650px;
+  height: 36px;
+  padding-top: 26px;
+  margin-left: 200px;
+}
+.links a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.appIcon {
+    height: 100px;
+    width:  200px;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.links a:hover, a:link a:active {
+  background-color: rgb(240, 177, 96);
+  border-radius: 10px
+}

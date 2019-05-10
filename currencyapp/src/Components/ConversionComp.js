@@ -21,7 +21,7 @@ class ConversionComp extends React.Component {
            <div className="Container"> 
            <ul className='Mylist'>
                 
-                <li><a className="active" href="#Create Page">Choose your money's worth:</a></li>
+                <li><a  href="#Create Page">Choose your money's worth:</a></li>
                 
                 <li><a href="#dollars">USD $</a></li>
                 <li><a href="#Euro">Euro &#x20AC;</a></li>
