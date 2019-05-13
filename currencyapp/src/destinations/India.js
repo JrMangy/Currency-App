@@ -26,15 +26,17 @@ render() {
                 <p>The current time in India is: {indiaTime.toLocaleString()}</p>
             </div>
             <br/>
+            {/* <iframe title="google" id="gmap_canvas" src={`https://maps.google.com/maps?q=India&t=&z=5&ie=UTF8&iwloc=&output=embed`}></iframe> */}
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_CSE8CjPUiCNVN06XgGq1J4OcI5M-vt_" width="640" height="480"></iframe>
+            <br/>
+            <h2 className="text">In the map above, you will find various airports, MoneyGram locations, ATMs, banks, and currency exchange locations near the destinations listed below.</h2>
+            <br/>
             <div className="pic1"><img className="slide" src={Backwaters} alt=""></img><h3>Backwaters, Alleppey, Kerala</h3></div>
             <div className="pic2"><img className="slide" src={Baga} alt=""></img><h3>Baga, Goa</h3></div>
             <div className="pic3"><img className="slide" src={Golden} alt=""></img><h3>Golden Temple, Amritsar</h3></div>
-            <h3>Languages</h3>
-            <p>Hindi and English are employed at the national level, with another 22 languages officially designated for regional use.</p>
-            <h3>Popular Tourist Destinations</h3>                
+            <h1>Languages</h1>
+            <h2 className="text">Hindi and English are employed at the national level, with another 22 languages officially designated for regional use.</h2>       
             {/* <p>Indian Standard Time (UTC+5:30)</p> */}
-           
-            
         </div>
         </div>
     ) //end return

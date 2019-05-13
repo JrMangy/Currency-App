@@ -27,20 +27,23 @@ render() {
                 <p>The current time in China is: {asiaTime.toLocaleString()}</p>
             </div>
             <br/>
+            {/* <iframe title="google" id="gmap_canvas" src={`https://maps.google.com/maps?q=China&t=&z=4&ie=UTF8&iwloc=&output=embed`}></iframe> */}
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1RY1eJAHDLLMDbVrUaqHjgWwllEjNLJT5" width="640" height="480"></iframe>
+            <br/>
+            <h2 className="text">In the map above, you will find various airports, MoneyGram locations, ATMs, banks, and currency exchange locations near the destinations listed below.</h2>
+            <br/>
             <div className="pic1"><img className="slide" src={ForbiddenCity} alt="ForbiddenCity"></img><h3>Forbidden City</h3></div>
             <div className="pic2"><img className="slide" src={GreatWall} alt="GreatWall"></img><h3>Great Wall</h3></div>
             <div className="pic3"><img className="slide" src={Terracotta} alt="Terracotta"></img><h3>Xi'an Terracotta Warriors</h3></div>
             <div className="text">
-            <h3>Languages</h3>
-            <p>official language: Modern Standard Mandarin
+            <h1>Languages</h1>
+            <h2 className="text">Official Language: Modern Standard Mandarin
                 <br/>
-                other: Cantonese, Uyghur, Mongolian</p>
+                other: Cantonese, Uyghur, Mongolian</h2>
                 </div>             
-            {/* <p>China Standard Time (UTC+8)</p> */}
-            
+            {/* <p>China Standard Time (UTC+8)</p> */}  
         </div>
         </div>
-       
     ) //end return
 }; //end render
 }; //end class China

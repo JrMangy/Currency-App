@@ -34,12 +34,17 @@ render() {
                 <p>The current time in New York is: {nYTime.toLocaleString()}</p>
             </div>
             <br/>
+            {/* <iframe title="google" id="gmap_canvas" src={`https://maps.google.com/maps?q=USA&t=&z=4&ie=UTF8&iwloc=&output=embed`}></iframe> */}
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vHY21VYJ8fXz3-68dX5v_Lyacn_6uez0" width="640" height="480"></iframe>
+            <br/>
+            <h2 className="text">In the map above, you will find various airports, MoneyGram locations, ATMs, banks, and currency exchange locations near the destinations listed below.</h2>
+            <br/>
             <div className="pic1"><img className="slide" src={FrenchQuarter} alt=""></img><h3>French Quarter, New Orleans, Louisiana</h3></div> 
             <div className="pic2"><img className="slide" src={GrandCanyon} alt=""></img><h3>Grand Canyon National Park, Arizona</h3></div>
             <div className="pic3"><img className="slide" src={MET} alt=""></img><h3>Metropolitan Museum of Art, New York, NY</h3></div>
-            <h3>Languages</h3>
-            <p>Though there is no federally established official language, a small majority of states have afforded English this designation. 
-                <br/> Dozens of indigenous languages, including Hawaiian, share official status on a regional basis.</p>               
+            <h1>Languages</h1>
+            <h2 className="text">Though there is no federally established official language, a small majority of states have afforded English this designation. 
+                <br/> Dozens of indigenous languages, including Hawaiian, share official status on a regional basis.</h2>               
             {/* <p>Atlantic, Eastern, Central, Mountain, Pacific, Alaska, and Hawaii-Aleutian Standard Times (UTC-4 through UTC-10).</p>
             <p>In territories:</p>
             <ul className="timeZones">

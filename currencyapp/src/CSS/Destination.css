@@ -33,3 +33,21 @@
     border-width: 15px;
     margin-bottom: 20px
     }
+#gmap_canvas {
+    height: 500px;
+    width: 700px
+}
+.text {
+    width: 70%;
+    display: inline-block;
+    text-align: left;
+    color: rgb(252, 252, 122);
+    font-family: url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+    /* text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black; */
+    /* text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000; */
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;  
+}
